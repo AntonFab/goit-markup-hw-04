@@ -135,6 +135,19 @@ ul {
 
 /* Hero */
 .hero-section {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/hero-bg.jpg);
   text-align: center;
 }
 
@@ -143,6 +156,7 @@ ul {
   margin-bottom: 46px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
   width: 646px;
   color: var(--primary-white-color);
   font-weight: 900;
@@ -177,6 +191,35 @@ ul {
 
 .advantages-list .item {
   width: 270px;
+}
+
+.advantages-list .item::before {
+  display: block;
+  content: "";
+
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  background-size: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-notebook::before {
+  background-image: url(..//images/notebook.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(..//images/astronaut.svg);
 }
 
 .advantages-list .item + .item {
