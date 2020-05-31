@@ -109,13 +109,19 @@ ul {
   color: var(--accent-color);
 }
 
+.icon-env,
+.icon-phone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .phone-email {
   display: inline-block;
   margin-left: auto;
 }
 
 .phone-email .contacts + .contacts {
-  margin-left: 12px;
+  margin-left: 30px;
 }
 
 .phone-email > .contacts {
@@ -193,21 +199,26 @@ ul {
   width: 270px;
 }
 
-.advantages-list .item::before {
+.adv-icons {
   display: block;
-  content: "";
-
   width: 270px;
   height: 120px;
+  padding: 25px 100px;
   background-color: var(--secondary-bg-color);
-  background-size: inherit;
-  background-position: center;
-  background-repeat: no-repeat;
   border-radius: 4px;
 }
 
-.icon-antenna::before {
+/* .advantages-list .item {
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+} */
+
+/* .icon-antenna::before {
   background-image: url(../images/antenna.svg);
+  width: 70px;
 }
 
 .icon-clock::before {
@@ -220,7 +231,7 @@ ul {
 
 .icon-astronaut::before {
   background-image: url(..//images/astronaut.svg);
-}
+} */
 
 .advantages-list .item + .item {
   margin-left: 30px;
